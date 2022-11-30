@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-image: url(/imagnes/bg_01.png);
+    background-position: 100%;
+    background-size: auto;
+    border-bottom: 3px solid rgba(10, 161, 242, 0.6);
+
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 0 2%;
+    color: white;
+
+}
+
+/* SESSÃO DO HEADER */
+.logo {
+    width: 20%;
+    margin-left: 8%;
+    margin-top: 15px;
+}
+
+.menu-desktop {
+    width: 40%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.contato {
+    width: 20%;
+    padding-top: 20px;
+    margin-right: 2%;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    padding: 0 5%;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li.selected {
+    color: #509d87;
+    position: relative;
+}
+
+li.selected>span {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 3px;
+    background: #509d87;
+    transition: 0.9s;
+}
+
+li:hover>.borda {
+    /*efeito de animação */
+    width: 40%;
+}
+
+/* SESSÃO DOS INFORMES E IMAGENS*/
+.container-informes {
+    width: 100%;
+    height: 900px;
+    background-image: url(/imagnes/bg_01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.info-contato {
+    width: 40%;
+    margin-left: 8%;
+    padding-right: 4%;
+    padding-top: 90px;
+
+}
+
+.info-contato h2 {
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+
+}
+
+.info-contato p {
+    padding: 10px 0;
+    color: black;
+    font-size: 18px;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.info-contato input {
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.info-contato input[type='email'] {
+    width: 251px;
+    height: 50px;
+    border: #509d87;
+    font-size: 16px;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.info-contato input[type="submit"] {
+    width: 251px;
+    height: 50px;
+    background: #5df7cb;
+    border-radius: 40px;
+    font-size: larger;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.info-contato span {
+    margin-top: 30px;
+    color: black;
+    font-size: 18px;
+}
+
+.info-imagens {
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 20px;
+
+}
+
+.info-imagens .img-1 img {
+    padding-right: 20px;
+    border: 20px solid rgba(0, 0, 0, 0);
+    /* Cira a sensação de diminuir o tamanho da imagem */
+}
+
+.info-imagens .img-2 img {
+    padding-right: 20px;
+    border: 20px solid rgba(0, 0, 0, 0);
+}
+
+/*  SESSÃO DESTINADA AOS SERVIÇOS PRESTADOS*/
+.servico-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    margin-bottom: 20px;
+}
+
+.serv {
+    width: 33.33%;
+    color: black;
+}
+
+.serv h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    padding-right: 40px;
+
+}
+
+.serv p {
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 10px 0;
+    padding-right: 30px;
+}
+
+.servico-1 img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/*  SESSÃO DOS SLOGAN E COMECIAIS*/
+.img-slogan {
+    width: 50%;
+    margin-top: 25px;
+}
+
+.img-slogan img {
+    max-width: 100%;
+}
+
+.info-slogan {
+    width: 50%;
+    color: black;
+    padding: 0 4%;
+
+}
+
+.info-slogan>h2 {
+    font-size: 33px;
+    margin: 20px 0;
+    padding-right: 35%;
+    color: #ccc;
+}
+
+.info-slogan p {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 10px 0;
+    color: black;
+    padding-right: 35%;
+}
+
+/* SESSÃO DEPOIMENTOS*/
+.depoimento {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(/imagnes/images/bg_02.png);
+    background-size: cover;
+}
+
+.depoimento h2 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 100px;
+    color: rgb(71, 70, 70);
+    text-align: center;
+
+
+}
+
+section.etapas {
+    padding: 40px 0;
+}
+
+section.etapas>.container {
+    max-width: 1200px;
+    margin-left: 10%;
+}
+
+section.etapas h2 {
+    text-align: center;
+    color: #3b3e42;
+}
+
+.etapas__single {
+    float: left;
+    width: 50%;
+
+}
+
+.etapas__group img {
+    max-width: 100%;
+    float: left;
+
+}
+
+.etapas__single .etapas__group:nth-of-type(1) img {
+    width: 50%;
+}
+
+.etapas__group p {
+    width: 50%;
+    float: left;
+    padding-top: 100px;
+    padding-left: 30px;
+    color: #509d87;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.etapas__group2 {
+    margin-bottom: 40px;
+}
+
+.etapas__group2 .circle {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.circle span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #2d2d2d;
+    font-size: 46px;
+}
+
+.line {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    z-index: 99999;
+    transform: translate(-50%, 0);
+    height: 40px;
+    width: 1px;
+    background: black;
+}
+
+.etapas__descricao {
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 20px;
+}
+
+.etapas__descricao h3 {
+    color: #03ca9f;
+    font-size: 18px;
+}
+
+.etapas__descricao p {
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+/* SESSÃO COM A DIFERENÇA ENTRE OS METODOS*/
+.diferenca {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.diferenca>h2 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: #2d2d2d;
+}
+
+.tradicional {
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    color: #2d2d2d;
+    padding-left: 15%;
+    border-right: 2px solid #2d2d2d;
+}
+
+.tradicional>h2 {
+    font-size: 30px;
+
+}
+
+.tradicional>h3 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: line-through red;
+    
+}
+
+.invisa {
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+    color: #03ca9f;
+    padding-right: 15%;
+}
+
+
+
+.invisa>h3 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+h3.selected {
+    color: #509d87;
+    position: relative;
+}
+h3.selected>span {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 2px;
+    background: #509d87;
+    transition: 0.9s;
+}
+
+h3:hover>.borda {
+    /*efeito de animação */
+    width: 20%;
+}
+section.contato{
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin-top: -50px;
+    text-align: center;
+    background-image: url(/imagnes/images/bg_02.png); 
+    background-repeat: no-repeat;   
+    background-size: 100% 100%;
+}
+.endereco{
+    width: 100%;
+    color: #2d2d2d;
+    margin-top: 120px;
+}
+.endereco h2{
+    color: #03ca9f;
+    font-size: 30px;
+    font-weight: 300;
+}
+.endereco p{
+    color: #2d2d2d;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.dados-contato{
+    width: 100%;
+    margin-top: 20px;
+}
+.dados-contato>.vazia{
+    width: 30%;
+}
+.dados-contato input{
+    width: 50%;
+    height: 40px;
+    border: #509d87;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+.dados-contato textarea{
+    display: flex;
+    width: 900px;
+    max-width: 50%;
+    height: 90px;
+    margin-left: 24.5%;
+    border: #509d87;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+.dados-contato input[type="submit"] {
+    width: 251px;
+    height: 50px;
+    background: #5df7cb;
+    border-radius: 20px;
+    font-size: larger;
+    margin: 20px 0;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background: #509d87;
+    text-align: center;
+}
+footer img{
+    padding-top: 20px;
+}
+@media screen and (max-width: 1310px) {
+    .info-contato {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .contato {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-2 {
+        display: none;
+    }
+
+    .img-slogan {
+        width: 100%;
+        display: none;
+
+    }
+
+    .info-slogan {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+
+    }
+
+    .info-slogan h2 {
+        padding-right: 0%;
+    }
+
+    .info-slogan p {
+        padding-right: 0%;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    .etapas__group {
+        margin: 40px 0;
+    }
+
+    .etapas__single {
+        width: 100%;
+    }
+
+    section.etapas>.container {
+        max-width: 700px;
+        margin-left: 0;
+        display: block;
+    }
+
+    .etapas__group img {
+        max-width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .etapas__single .etapas__group:nth-of-type(1) img {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .etapas__group p {
+        width: 100%;
+        text-align: center;
+        display: block;
+        float: none;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .tradicional>h3 {
+        font-size: 14px;
+    }
+    .invisa>h3 {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .info-imagens {
+        display: none;
+
+    }
+
+    .info-contato input[type="email"] {
+        border: 1px solid #ccc;
+    }
+
+    .servico-1 {
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+        margin-top: -300px;
+        height: 1880px;
+    }
+
+    .serv {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+
+    }
+    .diferenca>.container{
+        display: block;
+        width: 100%;
+        border-right: 2px solid white;
+    }
+    .tradicional {
+        width: 100%;
+        border-right: none;
+        padding-left: 0;
+    }
+    
+    .invisa {
+        width: 100%;
+        padding-right: 0;
+    }
+
+}
